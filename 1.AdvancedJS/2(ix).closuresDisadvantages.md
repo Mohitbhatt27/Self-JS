@@ -1,0 +1,3 @@
+Closures consume a lot of memory. Creating a function within a function causes memory duplication, which slows down the application.
+
+Closures are not garbage collected when functions are internally connected. Hence the memory cannot be garbage collected as long as the closures are active. For instance, if we utilize closure in ten locations, the memory will be held until all ten processes are completed, resulting in a JavaScript closure memory leak.
