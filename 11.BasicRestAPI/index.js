@@ -14,9 +14,24 @@ app.use(bodyParser.json());
 //.json returns middleware that only parses json and only looks at requests where the Content-Type header matches the type option.
 
 //for now we will use this array to store our data, i.e. we are mimicing a database
+
+
+
 let blogsList = [];
 
-app.get('/blogs', (req, res) => {
+function logger(req, res, next) {
+  console.log('Logging...');
+  console.log(req.body);
+  console.log(req.params);
+  next();
+}
+
+function isAuthorized(req, res, next) {
+  console.log('Authorized...');
+  next();
+}
+
+app.get('/blogs', logger, isAuthorized, (req, res) => {
     return res.status(404).json ({
         data : blogsList,
         success : true,
