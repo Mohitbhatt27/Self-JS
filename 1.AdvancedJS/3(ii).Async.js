@@ -21,7 +21,7 @@ process();
 console.log("bye");
 
 /* 
-Q. We can easily do tasks that tak a lot of time to complete without blocking the code flow. How?
+Q. We can easily do tasks that take a lot of time to complete without blocking the code flow. How?
 
 Call Stack - Normal call stack
 Event Queue - When Runtime has completed it's task it waits in the queue to be popped out.
