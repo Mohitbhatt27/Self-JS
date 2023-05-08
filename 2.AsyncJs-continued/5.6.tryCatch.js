@@ -11,7 +11,7 @@ function fetchData(url) {
       console.log('Download completed');
       resolve(data);
       // console.log("hello");
-      // resolve("sanket");// these lines will not be executed as promise is fulfilled only once
+      // resolve("mohit");// these lines will not be executed as promise is fulfilled only once
       // resolve(12345);
     }, 7000);
   });

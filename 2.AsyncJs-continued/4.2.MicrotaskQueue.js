@@ -8,7 +8,7 @@ for (let i = 0; i < 10000000000; i++) {
   // something
 }
 
-let x = Promise.resolve("Sanket's promise");
+let x = Promise.resolve("Mohit's promise");
 x.then(function processPromise(value) {
   //Microtask queue
   console.log('Whose promise ? ', value);
