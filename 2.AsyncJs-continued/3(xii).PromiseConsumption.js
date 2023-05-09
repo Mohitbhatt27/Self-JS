@@ -70,7 +70,7 @@ console.log('Start');
 let downloadPromise = fetchData('www.datadrive.com');
 downloadPromise
   .then(function processDownload(value) {
-    console.log('donwloading done with following value', value);
+    console.log('downloading done with following value', value);
     return value;
   })
   .then(function processWrite(value) {

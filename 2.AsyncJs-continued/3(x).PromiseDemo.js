@@ -12,7 +12,7 @@ function fetchData(url) {
 
 console.log('Starting the program');
 console.log('We are expecting to mimic a downloader');
-x = fetchData('www.google.com');
+x = fetchData('www.google.coms');
 console.log(
   'New promise object created successfully, but downloading still going on'
 );

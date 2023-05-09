@@ -1,19 +1,19 @@
-function cheese(){
-    console.log("Add lots of cheese");
+function cheese() {
+  console.log('Add lots of cheese');
 }
-function patty(cheese){
-    cheese();
-    console.log("Add veggies and patty");
+function patty(cheese) {
+  cheese();
+  console.log('Add veggies and patty');
 }
-function bun(patty){
-    console.log("take 2 fresh bun");
-    patty(cheese);
+function bun(patty) {
+  console.log('take 2 fresh bun');
+  patty(cheese);
 }
-function burger (bun){
-    setTimeout(() => {
-        console.log("Burger is ready");
-        bun(patty);
-        }, 2000);
+function burger(bun) {
+  setTimeout(() => {
+    console.log('Burger is ready');
+    bun(patty);
+  }, 2000);
 }
 
 burger(bun);

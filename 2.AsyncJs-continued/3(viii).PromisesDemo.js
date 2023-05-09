@@ -9,14 +9,13 @@ function demo1() {
   });
 }
 
-
 function demo2(val) {
   return new Promise(function (resolve, reject) {
     console.log('Start');
     setTimeout(function process() {
       console.log('Completed timer');
       if (val % 2 == 0) {
-        // even number
+        // even numbers
         resolve('Even');
       } else {
         // odd number
