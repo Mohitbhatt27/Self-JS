@@ -49,3 +49,5 @@ console.log('Asynchronous add called...');
 // Result: 5
 // Ending asynchronous add...
 // Asynchronous result: 5
+
+// In this example, the synchronous function is called first, and the asynchronous function is called second. However, the asynchronous function finishes after the synchronous function. This is because the synchronous function is called synchronously, while the asynchronous function is called asynchronously.

@@ -48,3 +48,5 @@ fetchCustom('www.google.com', function downloadCallback(response) {
     );
   });
 });
+
+// // In this example, we have a function called fetchCustom that mimics the functionality of the fetch function. It takes a url and a callback function as arguments. It downloads the content of the url and passes the result to the callback function.

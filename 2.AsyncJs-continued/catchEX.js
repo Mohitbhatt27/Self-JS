@@ -4,3 +4,5 @@ var p = new Promise((resolve, reject) => {
 
 p.catch(error => console.log(error.message));
 p.catch(error => console.log(error.message));
+
+// // Oops!
